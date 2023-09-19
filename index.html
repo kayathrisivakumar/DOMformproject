@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manupulation with forms</title>
+</head>
+<style>
+    form {
+        display: flex;
+
+    }
+
+    div {
+        display: grid;
+        margin-right: 25px;
+        margin-bottom: 10px;
+    }
+
+    label,
+    input {
+
+        margin-bottom: 10px;
+    }
+
+    table{
+        display:none
+    }
+
+    .formsubmission{
+        display: grid;
+    }
+    
+</style>
+
+<body>
+
+    <h3 id="title">Kindly sumbit the below details:</h3>
+
+    <form id="form">
+
+        <div id="ip">
+            <label for="fname">Firstname:</label>
+            <label for="lname">Lastname:</label>
+            <label for="address">Address:</label>
+            <label for="pincode">Pincode:</label>
+            <label for="gender">Gender:</label>
+            <label for="food">Choice of food:</label>
+            <label for="state">State:</label>
+            <label for="country">Country:</label>
+        </div>
+
+        <div>
+            <input type="text" name="fname" id="fname" placeholder="Enter your First name">
+            <input type="text" name="lname" id="lname"placeholder="Enter your Last name">
+            <input type="text" name="address" id="address">
+            <input type="text" name="pincode" id="pincode" inputmode="numeric">
+
+            <span id="gender"><label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="Male">
+                <label for="female">FeMale</label>
+                <input type="radio" name="gender" id="female" value="Female">
+            </span>
+
+
+            <span id="food">
+                <label for="veg">veg</label>
+                <input type="checkbox" name="food1" id="veg" value="veg">
+                <label for="Nonveg">Nonveg</label>
+                <input type="checkbox" name="food2" id="Nonveg" value="Non-veg">
+                <label for="chinese food">chinese food</label>
+                <input type="checkbox" name="food3" id="chinese" value="chinese">
+                <label for="continental">continental</label>
+                <input type="checkbox" name="food4" id="continental" value="continental">
+                <label for="Japanese food">Japanese food</label>
+                <input type="checkbox" name="food5" id="Japanese" value="Japanese">
+            </span>
+
+            <input type="text" name="state" id="state">
+            <input type="text" name="country" id="country">
+        </div><br>
+
+       
+        
+
+    </form>
+
+    <input type="submit" value="submit" id="formsubmission">
+
+    <div id="tablediv">
+    <table id="displaytable" class="table">
+        <tr>
+            <td>Firstname</td>
+            <td id="fname1"></td>
+        </tr>
+
+        <tr>
+            <td>Lastname</td>
+            <td id="lname1"></td>
+        </tr>
+
+        <tr>
+            <td>Address</td>
+            <td id="address1"></td>
+        </tr>
+        <tr>
+            <td>Pincode</td>
+            <td id="pincode1"></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td id="gender1"></td>
+        </tr>
+        <tr>
+            <td>food</td>
+            <td id="food1"></td>
+            <td id="food2"></td>
+            <td id="food3"></td>
+            <td id="food4"></td>
+            <td id="food5"></td>
+
+        </tr>
+        <tr>
+            <td>state</td>
+            <td id="state1"></td>
+        </tr>
+        <tr>
+            <td>country</td>
+            <td id="country1"></td>
+        </tr>
+    </table>
+</div>
+
+
+<script src="script.js"></script>
+<script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+
+</html>
